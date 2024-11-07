@@ -25,6 +25,7 @@ import UserReports from '../components/users/UserReports.vue';
 import UserChangePassword from '../components/users/UserChangePassword.vue';
 import UserConfirmPassword from '../components/users/UserConfirmPassword.vue';
 
+import UserAdminMessage from '../components/users/UserAdminMessage.vue';
 
 
 const routes = [
@@ -49,11 +50,13 @@ const routes = [
   { path: '/confirm', name: 'UserConfirmPassword', component: UserConfirmPassword },
   { path: '/admin_signup', name: 'AdminSignUp', component: AdminSignUp },
   { path: '/user_list', name: 'UserList', component: UserList },
+
+  { path: '/user-admin-message', name: 'UserAdminMessage', component: UserAdminMessage },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes
 });
 
 export default router;
