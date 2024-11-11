@@ -26,7 +26,8 @@ import UserChangePassword from '../components/users/UserChangePassword.vue';
 import UserConfirmPassword from '../components/users/UserConfirmPassword.vue';
 
 import UserAdminMessage from '../components/users/UserAdminMessage.vue';
-
+import NPSResponder from '../components/users/NPSResponder.vue';
+import BFPResponder from '../components/users/BFPResponder.vue';
 
 const routes = [
   { path: '/signup', name: 'userSignup', component: userSignup },
@@ -52,6 +53,9 @@ const routes = [
   { path: '/user_list', name: 'UserList', component: UserList },
 
   { path: '/user-admin-message', name: 'UserAdminMessage', component: UserAdminMessage },
+  { path: '/nps-responder', name: 'NPSResponder', component: NPSResponder},
+  { path: '/bfp-responder', name: 'BFPResponder', component: BFPResponder},
+
 ];
 
 const router = createRouter({
